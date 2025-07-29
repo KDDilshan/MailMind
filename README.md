@@ -46,18 +46,3 @@ Smart Email Assistant is a full-stack project that uses **Spring Boot**, **React
 1. Monitors Gmail DOM using `MutationObserver`.
 2. Injects "AI Reply" button in Gmail compose window.
 3. Sends content to backend → inserts reply directly into compose box using `execCommand`.
-
-
-### Architecture
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Chrome        │    │   React.js       │    │   Spring Boot   │
-│   Extension     │───▶│   Frontend       │───▶│   Backend       │
-│                 │    │                  │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                                         │
-                                                         ▼
-                                                ┌─────────────────┐
-                                                │   Google        │
-                                                │   Gemini API    │
-                                                └─────────────────┘
-
